@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">banco_pan_clone</string>
+    <string name="user_name">Pedro</string>
+    <string name="user_letter">P</string>
+    <string name="icVisibleOff_description">Disable visibility icon</string>
+    <string name="icQuestion_description">Help icon</string>
 </resources>
