@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-        
+
         <TextView
             android:textSize="18sp"
             android:layout_marginEnd="15dp"
@@ -50,9 +50,7 @@
             android:src="@drawable/ic_question"
             android:contentDescription="@string/icQuestion_description"
             />
-
-
-
+        
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
