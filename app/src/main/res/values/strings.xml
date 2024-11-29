@@ -4,4 +4,7 @@
     <string name="user_letter">P</string>
     <string name="icVisibleOff_description">Disable visibility icon</string>
     <string name="icQuestion_description">Help icon</string>
+    <string name="icArrowRight">Arrow icon</string>
+    <string name="current_balance">Saldo atual</string>
+    <string name="money">R$ 1.400,00</string>
 </resources>

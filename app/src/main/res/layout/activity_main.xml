@@ -7,50 +7,133 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <LinearLayout
+       <!-- LINES GUIDE-->
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="15dp"
-        android:gravity="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:textSize="18sp"
-            android:layout_marginEnd="15dp"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:gravity="center"
-            android:text="@string/user_letter"
-            android:background="@drawable/user_name_border"/>
-
-        <TextView
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.1"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.1"
+            android:orientation="vertical"
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/lineRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.9"
+            android:orientation="vertical"
+            />
+
+        <!--HEADER-->
+
+    <TextView
+        android:id="@+id/user_letter"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/user_name_border"
+        android:gravity="center"
+        android:text="@string/user_letter"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintTop_toTopOf="@+id/lineTop"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.53"
             android:text="@string/user_name"
             android:textStyle="bold"
-            android:layout_marginEnd="220dp"/>
+            tools:layout_editor_absoluteY="48dp"
+            app:layout_constraintEnd_toStartOf="@+id/ic_visibility"
+            app:layout_constraintStart_toEndOf="@+id/user_letter"
+            app:layout_constraintTop_toTopOf="@+id/lineTop"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/icVisibleOff_description"
-            android:src="@drawable/ic_visibility_off"
-            android:backgroundTint="@color/white"
-            android:layout_marginEnd="15dp"
             />
 
         <ImageView
-            android:layout_marginEnd="15dp"
+            android:id="@+id/ic_visibility"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintWidth_percent="0.1"
+            android:backgroundTint="@color/white"
+            android:contentDescription="@string/icVisibleOff_description"
+            tools:layout_editor_absoluteY="48dp"
+            android:src="@drawable/ic_visibility_off"
+            app:layout_constraintEnd_toStartOf="@+id/ic_help"
+            app:layout_constraintTop_toTopOf="@+id/lineTop"
+             />
+
+        <ImageView
+            android:id="@+id/ic_help"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:gravity="center"
-            android:src="@drawable/ic_question"
             android:contentDescription="@string/icQuestion_description"
+            android:gravity="center"
+            tools:layout_editor_absoluteY="48dp"
+            android:src="@drawable/ic_question"
+            app:layout_constraintEnd_toEndOf="@+id/lineRight"
+            app:layout_constraintTop_toTopOf="@+id/lineTop"
+
             />
-        
-    </LinearLayout>
+
+    <!--PIX OPTION BOX-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/currentBalanceLine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.25"
+            />
+
+  <TextView
+      android:id="@+id/text_current_balance"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      app:layout_constraintWidth_percent="0.8"
+      android:text="@string/current_balance"
+      tools:layout_editor_absoluteY="103dp"
+      app:layout_constraintStart_toStartOf="@+id/lineLeft"
+      app:layout_constraintTop_toTopOf="@+id/currentBalanceLine"
+      app:layout_constraintEnd_toEndOf="@id/lineRight"
+      />
+
+ <TextView
+     android:layout_width="0dp"
+     android:layout_height="wrap_content"
+     android:text="@string/money"
+     android:textColor="@color/blue"
+     android:textSize="16sp"
+     app:layout_constraintStart_toStartOf="@+id/lineLeft"
+     app:layout_constraintTop_toBottomOf="@+id/text_current_balance"
+
+      />
+
+ <ImageView
+     android:layout_width="15dp"
+     android:layout_height="15dp"
+     android:src="@drawable/ic_arrow_right"
+     android:contentDescription="@string/icArrowRight"
+     app:layout_constraintEnd_toEndOf="@+id/lineRight"
+     app:layout_constraintTop_toBottomOf="@+id/text_current_balance"
+     android:layout_marginTop="5dp"
+     />
+
+ <androidx.constraintlayout.widget.Guideline
+     android:id="@+id/pix_line"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     app:layout_constraintGuide_percent="0.40"
+     />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
