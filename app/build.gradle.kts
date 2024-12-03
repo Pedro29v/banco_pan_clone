@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.pedro.banco_pan_clone"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.pedro.banco_pan_clone"
