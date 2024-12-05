@@ -10,8 +10,31 @@
     <string name="payments">Pagamentos</string>
     <string name="black_friday">Black Friday</string>
     <string name="loan">Empréstimos</string>
+    <string name="card">Cartões</string>
+    <string name="ask_for_your_card">Peça seu cartão \n agora</string>
+    <string name="text_loan">Empréstimos</string>
+    <string name="text_loan_description">Temos novas \n opções pra \n você</string>
+    <string name="investments">Investimentos</string>
+    <string name="investments_description">Coloque seu \n dinheiro pra \n render</string>
+    <string name="benefits">+Benefícios</string>
+    <string name="benefits_description">Em \n manutenção</string>
 
+    <!--FIRST LIST STRING-->
 
+    <string name="cell_phone_recharge">Recarga de celular</string>
+    <string name="salary">Trazer salário</string>
+    <string name="renegotiation">Renegociações</string>
+    <string name="financing">Financiamento de Veículo</string>
+    <string name="consigned_loan">Empréstimo Consignado</string>
+    <string name="protection">Proteções</string>
+    <string name="open_finance">Open Finance</string>
+
+    <!--FIRST LIST STRING-->
+
+    <string name="profile">Meu Perfil</string>
+    <string name="help">Ajuda</string>
+    <string name="changeUser">Trocar de Usuário</string>
+    <string name="exit">Sair do app</string>
 
     <!--icons description string-->
 
@@ -19,5 +42,9 @@
     <string name="icQuestion_description">Help icon</string>
     <string name="icArrowRight">Arrow icon</string>
     <string name="icPix">Pix icon</string>
+
+    <!--VERSION-->
+
+    <string name="version">Versão 2.90.3 #644</string>
 
 </resources>
