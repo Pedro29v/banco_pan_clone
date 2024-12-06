@@ -24,5 +24,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CardActivity::class.java)
             startActivity(intent)
         }
+
+        val buttonInvest = findViewById<LinearLayout>(R.id.btn_investment)
+        buttonInvest.setOnClickListener {
+            val intent = Intent(this, InvestmentsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

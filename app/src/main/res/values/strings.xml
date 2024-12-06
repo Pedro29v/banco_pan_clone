@@ -66,4 +66,42 @@
     <string name="investments_option">Investimentos</string>
     <string name="protetion_option">Proteções</string>
 
+    <!--INVESTMENTS STRING -->
+
+    <string name="cbd">CBD Liquidez diária</string>
+    <string name="cdi">130% do CDI</string>
+    <string name="fgc">Protegido pelo FGC</string>
+
+    <string name="min_investment">Investimento \n mínimo:</string>
+    <string name="amount_min_investment">R$ 5,00</string>
+
+    <string name="max_investment">Investimento \n máximo:</string>
+    <string name="amount_max_investment">R$ 10.000</string>
+
+    <string name="dead_line">Prazo</string>
+    <string name="days">90 días</string>
+
+    <string name="ir">IR:</string>
+    <string name="regressive">Regressivo</string>
+
+    <string name="iof">IOF:</string>
+
+    <string name="cash_out">Resgate:</string>
+    <string name="diary">Diário</string>
+
+    <string name="sender">Emissor:</string>
+    <string name="pan_bank">Banco Pan</string>
+
+    <string name="performance">Rendimento:</string>
+    <string name="amount_performance">130% do CDI</string>
+
+    <string name="invest_btn">Investir</string>
+
+    <string name="desc_ic_back">Seta pra voltar na tela anterior</string>
+    <string name="desc_banner">Imagems</string>
+
+    <string name="banner_one">Saúde de qualidade \n pagando apenas R$ \n 8,99 por mês</string>
+
+
+
 </resources>

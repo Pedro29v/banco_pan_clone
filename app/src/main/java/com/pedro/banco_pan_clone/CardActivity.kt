@@ -1,6 +1,8 @@
 package com.pedro.banco_pan_clone
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,19 @@ class CardActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_card)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnResume = findViewById<TextView>(R.id.btn_resume)
+        val btnInvestments = findViewById<TextView>(R.id.btn_investments)
+
+        btnResume.setOnClickListener{
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
         }
+
+        btnInvestments.setOnClickListener{
+            val intent = Intent(this,InvestmentsActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
