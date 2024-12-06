@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CardActivity">
+
+    <!-- LINES GUIDE-->
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.1"
+        android:orientation="vertical"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintGuide_percent="0.9"
+        android:orientation="vertical"
+        />
+
+    <!--IMAGE-->
+
+    <ImageView
+        android:id="@+id/image_src"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/credit_card"
+        android:contentDescription="@string/card"
+        android:paddingTop="30dp"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        />
+
+    <!--CURRENT BALANCE-->
+
+    <TextView
+        android:id="@+id/money_available"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/image_src"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:layout_marginTop="200dp"
+        android:text="@string/available_money"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/money_available"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:text="@string/current_money"
+        android:textSize="21sp"
+        android:textColor="@color/blue"
+        app:drawableRightCompat="@drawable/ic_visibility_off"
+        />
+
+    <TextView
+        android:id="@+id/bill"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/money"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:layout_marginTop="32dp"
+        android:text="@string/bill"
+        android:textColor="@color/dark_grey"
+        />
+
+    <TextView
+        android:id="@+id/spent"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/bill"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:text="@string/amount_spent"
+        android:textStyle="bold"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="0dp"
+        android:layout_height="3dp"
+        app:layout_constraintWidth_percent="0.8"
+        app:layout_constraintTop_toBottomOf="@+id/spent"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:max="100"
+        android:progress="70"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_marginTop="32dp"
+        android:progressTint="@color/blue" />
+
+    <!--BUTTONS-->
+
+    <HorizontalScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.8"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintStart_toStartOf="@+id/lineLeft"
+        app:layout_constraintEnd_toStartOf="@id/lineRight"
+        android:layout_marginTop="32dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/resumen"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/account"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cards"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/black"
+                android:textColor="@color/white"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/loal_option"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/investments_option"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/protetion_option"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

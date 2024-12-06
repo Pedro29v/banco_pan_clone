@@ -18,6 +18,8 @@
     <string name="investments_description">Coloque seu \n dinheiro pra \n render</string>
     <string name="benefits">+Benefícios</string>
     <string name="benefits_description">Em \n manutenção</string>
+    <string name="card_description">imagem do cartão do banco</string>
+
 
     <!--FIRST LIST STRING-->
 
@@ -46,5 +48,22 @@
     <!--VERSION-->
 
     <string name="version">Versão 2.90.3 #644</string>
+    <string name="title_activity_card">CardActivity</string>
+
+    <!--TEXT ABOUT CARD-->
+
+    <string name="available_money"> Você ainda \n pode gastar: </string>
+    <string name="current_money">R$ 1.245,00</string>
+    <string name="bill">Sua fatura atual está em:</string>
+    <string name="amount_spent">R$ 755,00</string>
+
+    <!--BUTTONS CARD-->
+
+    <string name="resumen">Resumo</string>
+    <string name="account">Conta</string>
+    <string name="cards">Cartões</string>
+    <string name="loal_option">Empréstimos</string>
+    <string name="investments_option">Investimentos</string>
+    <string name="protetion_option">Proteções</string>
 
 </resources>
