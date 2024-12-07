@@ -163,7 +163,6 @@
         android:columnCount="2"
         android:rowCount="2"
         android:padding="2dp"
-
         >
 
         <LinearLayout
@@ -279,22 +278,7 @@
 
     <!--BANNER SLIDE -->
 
-    <HorizontalScrollView
-        android:id="@+id/first_banner_slide"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintWidth_percent="0.8"
-        android:scrollbars="none"
-        app:layout_constraintTop_toBottomOf="@+id/myGridLayout"
-        app:layout_constraintStart_toStartOf="@+id/lineLeft"
-        app:layout_constraintEnd_toStartOf="@id/lineRight"
-        android:layout_marginTop="32dp"
-        android:padding="15dp"
-        android:backgroundTint="@color/dark_grey"
-        android:background="@drawable/button_background"
-        >
-        
-    </HorizontalScrollView>
+
 
     <!--SECOND GRID LAYOUT-->
 
@@ -305,7 +289,7 @@
         app:layout_constraintWidth_percent="0.8"
         app:layout_constraintEnd_toStartOf="@id/lineRight"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintTop_toBottomOf="@+id/first_banner_slide"
+        app:layout_constraintTop_toBottomOf="@+id/myGridLayout"
         app:layout_constraintStart_toStartOf="@id/lineLeft"
         android:layout_marginTop="32dp"
         android:columnCount="2"
