@@ -10,7 +10,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".CardActivity">
+    tools:context=".CardActivity"
+    android:layout_marginTop="20dp"
+    android:paddingBottom="50dp"
+    >
 
     <!-- LINES GUIDE-->
 
